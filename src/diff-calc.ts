@@ -197,13 +197,11 @@ namespace DifficultyCalculator {
     let aim: number = calculateDifficulty(objects, DifficultyType.AIM);
     let speed: number = calculateDifficulty(objects, DifficultyType.SPEED);
 
-    aim = Math.round(Math.sqrt(aim) * STAR_SCALING_FACTOR * 100) / 100;
-    speed = Math.round(Math.sqrt(speed) * STAR_SCALING_FACTOR * 100) / 100;
+    aim = Math.sqrt(aim) * STAR_SCALING_FACTOR;
+    speed = Math.sqrt(speed) * STAR_SCALING_FACTOR;
 
     let stars = aim + speed +
       Math.abs(speed - aim) * EXTREME_SCALING_FACTOR;
-
-    stars = Math.round(stars * 100) / 100;
 
     return {
       aim, speed, stars
