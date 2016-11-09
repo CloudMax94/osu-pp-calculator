@@ -17,14 +17,15 @@
   "author": "Teemu Pääkkönen <oamaok@gmail.com>",
   "license": "GPL",
   "scripts": {
-    "postinstall": "tsc",
-    "prepublish": "tsc"
+    "postinstall": "tsc"
   },
   "typescript": {
     "definition": "dist/index.d.ts"
   },
-  "devDependencies": {
-    "osu-parser": "^0.3.3",
+  "dependencies": {
     "typescript": "^1.8.10"
+  },
+  "devDependencies": {
+    "osu-parser": "^0.3.3"
   }
 }
