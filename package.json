@@ -17,6 +17,7 @@
   "author": "Teemu Pääkkönen <oamaok@gmail.com>",
   "license": "GPL",
   "scripts": {
+    "postinstall": "tsc",
     "prepublish": "tsc"
   },
   "typescript": {
