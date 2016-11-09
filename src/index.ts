@@ -177,4 +177,5 @@ namespace PPCalculator {
 };
 
 export {PPCalculator};
+export {DifficultyCalculator};
 export {Beatmap};
