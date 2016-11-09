@@ -8,7 +8,7 @@ enum BeatmapModifier {
   SuddenDeath = 1 << 5,
   DoubleTime  = 1 << 6,
   Relax       = 1 << 7,
-  HalfTime    = 1 << 7,
+  HalfTime    = 1 << 8,
   Nightcore   = 1 << 9,
   Flashlight  = 1 << 10,
   Autoplay    = 1 << 11,
